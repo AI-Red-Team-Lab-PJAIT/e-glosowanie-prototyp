@@ -1,0 +1,9 @@
+node_modules
+dist
+test-results
+playwright-report
+# cudze zrzuty ekranu, tylko lokalnie
+docs/referencje/*
+!docs/referencje/README.md
+.DS_Store
+/debug/
