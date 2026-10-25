@@ -2,6 +2,8 @@
 
 ## 2026-10-25
 
+- Wdrożenie: repo `AI-Red-Team-Lab-PJAIT/e-glosowanie-prototyp`, GitHub Pages przez workflow po zielonym CI. Link do repo w README, w polu „About” i w ekranie „O projekcie”.
+- README z opisem przepływu, listą dokumentów i wdrożeniem. `AGENTS.md` z zasadami dla innych modeli AI.
 - Pierwsza wersja prototypu: autologowanie, Usługi z wygaszonymi modułami i wyszukiwarką, usługa Wybory (szczegóły z .ics i kopiowaniem adresu, dane w rejestrze, historia), przepływ głosowania z MFA (logowanie, NFC, skan twarzy 3D), cztery rodzaje kart, potwierdzenie i zapis z SHA-256.
 - Wygląd odtworzony z oficjalnych grafik usługi Wybory (info.mobywatel.gov.pl) i zrzutu listy usług.
 - Na laptopie ramka iPhone'a, na telefonie pełny ekran. Pasek „To nie jest aplikacja rządowa” w środku aplikacji. „O projekcie” jako ekran aplikacji, nie osobna strona.

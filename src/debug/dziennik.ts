@@ -46,12 +46,18 @@ export function loguj(typ: Zdarzenie["typ"], dane: Record<string, unknown> = {})
 // Krótki opis klikniętego elementu: rola, nazwa dostępna i stan.
 function opis(el: Element) {
 	const cel = el.closest("a, button, label, input, [role]") ?? el;
-	const tekst = (cel.getAttribute("aria-label") ?? cel.textContent ?? "").replace(/\s+/g, " ").trim().slice(0, 80);
+	const tekst = (cel.getAttribute("aria-label") ?? cel.textContent ?? "")
+		.replace(/\s+/g, " ")
+		.trim()
+		.slice(0, 80);
 	return {
 		tag: cel.tagName.toLowerCase(),
 		tekst,
 		href: cel.getAttribute("href") ?? undefined,
-		disabled: (cel as HTMLButtonElement).disabled || cel.getAttribute("aria-disabled") === "true" || undefined,
+		disabled:
+			(cel as HTMLButtonElement).disabled ||
+			cel.getAttribute("aria-disabled") === "true" ||
+			undefined,
 		klasa: cel.getAttribute("class") ?? undefined,
 	};
 }
@@ -64,8 +70,14 @@ export function startDziennika() {
 		url: window.location.href,
 		bezpieczny: window.isSecureContext,
 	});
-	document.addEventListener("click", (e) => e.target instanceof Element && loguj("klik", opis(e.target)), true);
-	window.addEventListener("error", (e) => loguj("blad", { msg: e.message, gdzie: `${e.filename}:${e.lineno}` }));
+	document.addEventListener(
+		"click",
+		(e) => e.target instanceof Element && loguj("klik", opis(e.target)),
+		true,
+	);
+	window.addEventListener("error", (e) =>
+		loguj("blad", { msg: e.message, gdzie: `${e.filename}:${e.lineno}` }),
+	);
 	window.addEventListener("unhandledrejection", (e) => loguj("blad", { msg: String(e.reason) }));
 	window.addEventListener("pagehide", wyslij);
 }

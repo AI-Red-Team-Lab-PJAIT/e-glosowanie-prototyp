@@ -56,6 +56,17 @@ export function OProjekcie() {
 					Janusza Cieszyńskiego (licencja MIT). Nie używamy godła, logo ani grafik aplikacji
 					mObywatel.
 				</p>
+				<p>
+					Kod źródłowy:{" "}
+					<a
+						href="https://github.com/AI-Red-Team-Lab-PJAIT/e-glosowanie-prototyp"
+						target="_blank"
+						rel="noreferrer"
+					>
+						github.com/AI-Red-Team-Lab-PJAIT/e-glosowanie-prototyp
+					</a>
+					.
+				</p>
 			</div>
 			<div className="actions">
 				<Link to="/uslugi/wybory" className="btn primary">

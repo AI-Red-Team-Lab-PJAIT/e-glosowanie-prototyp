@@ -4,7 +4,6 @@ Aktualizowany na bieżąco. Zamknięte rzeczy przenosimy do `CHANGELOG.md`.
 
 ## Do zrobienia
 
-- [ ] Push do `AI-Red-Team-Lab-PJAIT/e-glosowanie-prototyp` i włączenie GitHub Pages. Czeka na zgodę.
 - [ ] Ciemny motyw (prawdziwa aplikacja go ma).
 - [ ] Ekran „Zarządzaj usługami” po „Edytuj”? Tylko jeśli przyda się na pokazie.
 - [ ] Porównanie zrzutów z Playwrighta z referencjami obok siebie i dopieszczenie odstępów.
