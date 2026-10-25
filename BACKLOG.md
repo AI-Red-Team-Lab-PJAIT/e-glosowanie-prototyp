@@ -4,6 +4,7 @@ Aktualizowany na bieżąco. Zamknięte rzeczy przenosimy do `CHANGELOG.md`.
 
 ## Do zrobienia
 
+- [ ] Akcje w workflowach na wersje z Node 24 (`checkout`, `setup-node`, `configure-pages`, `deploy-pages`, `upload-pages-artifact`, `pnpm/action-setup`). Teraz GitHub wymusza Node 24 i ostrzega.
 - [ ] Ciemny motyw (prawdziwa aplikacja go ma).
 - [ ] Ekran „Zarządzaj usługami” po „Edytuj”? Tylko jeśli przyda się na pokazie.
 - [ ] Porównanie zrzutów z Playwrighta z referencjami obok siebie i dopieszczenie odstępów.
