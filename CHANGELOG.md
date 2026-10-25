@@ -2,6 +2,7 @@
 
 ## 2026-10-25
 
+- CI da się uruchomić ręcznie (`gh workflow run ci.yml`). Actions włączone w organizacji.
 - Wdrożenie: repo `AI-Red-Team-Lab-PJAIT/e-glosowanie-prototyp`, GitHub Pages przez workflow po zielonym CI. Link do repo w README, w polu „About” i w ekranie „O projekcie”.
 - README z opisem przepływu, listą dokumentów i wdrożeniem. `AGENTS.md` z zasadami dla innych modeli AI.
 - Pierwsza wersja prototypu: autologowanie, Usługi z wygaszonymi modułami i wyszukiwarką, usługa Wybory (szczegóły z .ics i kopiowaniem adresu, dane w rejestrze, historia), przepływ głosowania z MFA (logowanie, NFC, skan twarzy 3D), cztery rodzaje kart, potwierdzenie i zapis z SHA-256.
